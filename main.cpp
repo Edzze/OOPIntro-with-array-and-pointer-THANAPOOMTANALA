@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
 
   float highscore = pt_std[0].get_score();
 
-  for(i=1;i<n;i++)
+  for(i=0;i<n;i++)
     {
       if (pt_std[i].get_score() > highscore)
         highscore = pt_std[i].get_score();
@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 
   cout<<"Highest Score: "<<endl;
   
-  for(i=1;i<n;i++)
+  for(i=0;i<n;i++)
     {
       if (pt_std[i].get_score() == highscore)
         pt_std[i].print_name();
@@ -49,7 +49,3 @@ int main(int argc, char* argv[]) {
 
 
   }
-  
-  
-
-
